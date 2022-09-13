@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" class="mdl-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta property="og:site_name" content="Asahi">
+    <meta property="og:title" content="Asahi">
+    <meta property="twitter:title" name="twitter:title" content="Asahi">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://w3ni385.nanoweb.com.vn/">
+    <meta property="og:image" content="http://w3ni385.nanoweb.com.vn/mediacenter/media/images/363/logo/logo.png">
+    <meta name="twitter:image" content="http://w3ni385.nanoweb.com.vn/mediacenter/media/images/363/logo/logo.png">
+    <meta property="og:image:type" name="og:image:type" content="image/png">
+    
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="googlebot" content="noindex,nofollow">
+    
+    <title>Asahi</title>
+    <!-- STYLE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css">
+    <link href="/assets/css/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/css/style-menu.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- SCRIPT -->
+    
+    <script src="/assets/js/jssor.slider.js"></script>
+    <script src="/assets/js/script.js"></script>
+</head>
+
+<body>
+
+    <!--header-->
+    <header id="header" class="header clearfix">
+        <div class="header-top" style="">
+            <h1 style="text-indent: -9999px;height: 0px;margin: 0px;">Ashahi</h1>
+            <div class="container">
+                <div class="header-top-left">
+                    <div class="login clearfix">
+                        <ul>
+                            <li>
+                                <a href="/dang-ky.html" title="Đăng ký">Đăng ký
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dang-nhap.html" title="Đăng nhập">Đăng
+                                    nhập </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-top-right">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="container">
+                <div class="flower flower-left">
+                    <i class="icon icon-flower-left"> </i>
+                </div>
+                <div class="header-center-cont1 logo">
+                    <div class="box-img box-img-logo">
+                        <a href="index.html" title="Asahi">
+                            <img title="#" src="/assets/images/logo.png" alt="Asahi">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-center-cont2 hotline">
+                    <div class="hotline-content">
+                        <i class="icon icon-hotline"> </i>
+                        <div class="text-content">
+                            <p>Hotline</p>
+                            <a href="tel:0968 266 266">0968 266 266</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-center-cont3 language">
+                    <div class="language-content">
+                        <ul>
+                            <li class="active">
+                                <a class="language-action"
+                                    href="http://w3ni385.nanoweb.com.vn/set-language.html?lang=vi&amp;actionKey=eyJ1cmwiOiJcLyIsInBhcmFtcyI6W119">
+                                    VN </a>
+                            </li>
+                            <li class="">
+                                <a class="language-action"
+                                    href="http://w3ni385.nanoweb.com.vn/set-language.html?lang=en&amp;actionKey=eyJ1cmwiOiJcLyIsInBhcmFtcyI6W119">
+                                    EN </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    jQuery(document).ready(function () {
+                        jQuery('.language .language-action').on('click', function () {
+                            var thi = jQuery(this);
+                            if (!thi.hasClass('active') && !thi.parent().hasClass('active')) {
+                                var url = (thi.attr('href')) ? thi.attr('href') : thi.attr('src');
+                                if (!url)
+                                    return false;
+                                jQuery.ajax({
+                                    type: 'post',
+                                    dataType: 'JSON',
+                                    url: url,
+                                    beforeSend: function () {
+                                    },
+                                    success: function (res) {
+                                        thi.addClass('active');
+                                        if (res.code == 200) {
+                                            if (res.redirect)
+                                                window.location.href = res.redirect;
+                                            else
+                                                window.location.href = window.location.href;
+                                        }
+                                    },
+                                    error: function () {
+                                    }
+
+                                });
+                            }
+                            return false;
+                        });
+                    });
+                </script>
+                <div class="header-center-cont4 shoppingcart" style="height: 110px;">
+                    <div class="shoppingcart-content">
+                        <a class="btn-show-cart" href="/gio-hang.html">
+                            <i class="icon icon-shoppingcart"> </i>
+                        </a>
+                        <div class="text-content">
+                            <a class="btn-show-cart" href="/gio-hang.html" title="#">Giỏ
+                                hàng</a>
+                        </div>
+                    </div>
+                    <div class="Cart">
+                        <div class="box-cart">
+                            <div class="header-box-cart">
+                                <p>Giỏ hàng</p>
+                            </div>
+                            <div id="boxscroll2" class="cont-cart ">
+                                <div class="mush">
+                                </div>
+                            </div>
+                            <div class="bottom-cart">
+                                <p class="total"><span class="pricetext">0</span><span class="currencytext">đ</span></p>
+                                <a class="check-out" href="/gio-hang.html">Giỏ hàng</a>
+                            </div>
+                        </div>
+                        <script>
+                            $(function () {
+                                $('.btn-show-cart').hover(function () {
+                                    $('.box-cart').fadeIn('slow');
+                                }, function () {
+
+                                });
+                                $(".shoppingcart").hover(function () {
+                                    //                    $('.box-cart').fadeIn('slow');
+                                }, function () {
+                                    $('.box-cart').fadeOut('slow');
+                                });
+                                $(".shoppingcart-content").click(function () {
+                                    if ($(".box-cart").is(":visible")) {
+                                        $('.box-cart').fadeOut('slow');
+                                    } else {
+                                        $('.box-cart').fadeIn('slow');
+                                    }
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="flower flower-right">
+                    <i class="icon icon-flower-right"> </i>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav id="nav" class="nav clearfix">
+                    <div id="cssmenu" class="cssmenu">
+                        <div id="menu-line" style="width: 121px; left: 0px;"></div>
+                        <div id="menu-button"></div>
+                        <ul>
+                            <li class=" active">
+                                <a href="index.html" title="Trang chủ - 杉屋について">
+                                    Trang chủ <br><span class="menu-language-japan"> 杉屋について</span> </a>
+                            </li>
+                            <li class=" ">
+                                <a href="/gioi-thieu.html" title="Chúng tôi - 杉屋について">
+                                    Chúng tôi <br><span class="menu-language-japan"> 杉屋について</span> </a>
+                            </li>
+                            <li class="has-sub"><span class="submenu-button"></span>
+                                <a href="/san-pham.html" title="Thực đơn - お品書き">
+                                    Thực đơn <br><span class="menu-language-japan"> お品書き</span> </a>
+                                <!-- <ul>
+                                    <li class=" ">
+                                        <a href="/khai-vi-pc,5699" title="Khai vị - アペタイザー">
+                                            Khai vị <br><span class="menu-language-japan"> アペタイザー</span> </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="/mon-nuong-pc,5700" title="Món nướng - 焼き">
+                                            Món nướng <br><span class="menu-language-japan"> 焼き</span> </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="http://w3ni385.nanoweb.com.vn/sashimi-sushi-pc,5703"
+                                            title="Sashimi, sushi - 刺身 , 寿司">
+                                            Sashimi, sushi <br><span class="menu-language-japan"> 刺身 , 寿司</span> </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="/mon-chien-pc,5723" title="Món chiên - 揚げ">
+                                            Món chiên <br><span class="menu-language-japan"> 揚げ</span> </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="/com-chao-pc,5724" title="Cơm, cháo - 米, ポリッジ">
+                                            Cơm, cháo <br><span class="menu-language-japan"> 米, ポリッジ</span> </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="/mon-mi-pc,5729" title="Món mì - 麺類">
+                                            Món mì <br><span class="menu-language-japan"> 麺類</span> </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="/teppanyaki-pc,5725" title="Teppanyaki - 鉄板焼き">
+                                            Teppanyaki <br><span class="menu-language-japan"> 鉄板焼き</span> </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="/mon-om-pc,5726" title="Món om - 煮る">
+                                            Món om <br><span class="menu-language-japan"> 煮る</span> </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="/mon-lau-pc,5727" title="Món lẩu - 鍋">
+                                            Món lẩu <br><span class="menu-language-japan"> 鍋</span> </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="/mon-dac-biet-pc,5728" title="Món đặc biệt - ?">
+                                            Món đặc biệt <br><span class="menu-language-japan"> ?</span> </a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class=" ">
+                                <a href="/khuyen-mai.html" title="Khuyến mại - プロモーション">
+                                    Khuyến mại <br><span class="menu-language-japan"> プロモーション</span> </a>
+                            </li>
+                            <li class=" ">
+                                <a href="/voucher.html" title="Voucher - クーポン">
+                                    Voucher <br><span class="menu-language-japan"> クーポン</span> </a>
+                            </li>
+                            <li class=" ">
+                                <a href="/dat-ban.html" title="Đặt bàn - 貸し切り">
+                                    Đặt bàn <br><span class="menu-language-japan"> 貸し切り</span> </a>
+                            </li>
+                            <li class=" ">
+                                <a href="/bai-viet.html" title="Tin tức - &gt;ニュース">
+                                    Tin tức <br><span class="menu-language-japan"> &gt;ニュース</span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header-bottom-facebook">
+                    <a rel="nofollow" href="http://facebook.com/" target="_blank">
+                        <i class="icon icon-facebook"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <style type="text/css">
+        #slider1_container>div {
+            transform: none !important;
+        }
+
+        #slider1_container a img {
+            left: 0px !important;
+        }
+    </style>
+    <div id="slider">
+        <div id="slider1_container" style="position: relative; width: 1366px; margin: auto;
+             height: 660px; overflow: hidden;" jssor-slider="true">
+
+            <div
+                style="position: absolute; top: 0px; left: 0px; width: 1366px; height: 660px; transform-origin: 0px 0px; transform: scale(1);">
+                <div class=""
+                    style="position: relative; width: 1366px; margin: auto; height: 660px; overflow: visible; display: block; top: 0px; left: 0px;">
+                    <div u="loading"
+                        style="position: absolute; top: 0px; left: 0px; width: 1366px; height: 660px; display: none;"
+                        debug-id="loading-container">
+                        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                     background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                        </div>
+                        <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                     top: 0px; left: 0px;width: 100%;height:100%;">
+                        </div>
+                    </div>
+                    <div u="slides"
+                        style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1366px; height: 660px; overflow: hidden; z-index: 0;">
+                        <div debug-id="slide_container"
+                            style="position: absolute; z-index: 0; pointer-events: none; left: 1366px; top: 0px;"></div>
+                    </div>
+                    <div u="slides"
+                        style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1366px; height: 660px; overflow: hidden; z-index: 0;"
+                        debug-id="slide-board">
+                        <div
+                            style="width: 1366px; height: 660px; top: 0px; left: 0px; position: absolute; background-color: rgb(0, 0, 0); opacity: 0; display: none;">
+                        </div>
+                        <div debug-id="slide-0"
+                            style="width: 1366px; height: 660px; top: 0px; left: 1366px; position: absolute; overflow: hidden; transform: perspective(2000px);">
+                            <a href="index.html" title="Rượu Sake - truyền thống Nhật Bản"
+                                style="width: 1366px; height: 660px; top: 0px; left: 1366px; transform: perspective(2000px);"
+                                jssor-content="true">
+                                <img u="image" src="/assets/images/21_1473927736_35557da5a3893113.jpg"
+                                    alt="Rượu Sake - truyền thống Nhật Bản" border="0" jssor-content="true"
+                                    style="width: 1535.88px; height: 660px; top: 0px; left: -84.9387px; transform: perspective(2000px); position: absolute;">
+                            </a>
+                            <div u="caption" t="NO" t3="RTT|2" r3="137.5%" du3="0000" d3="000"
+                                style="position: absolute; width: 445px; height: 380px; top: 0px; left: 10%; margin: 0px auto; transform: rotate(0deg) scale(1);"
+                                jssor-content="true">
+                                <!-- <div u="caption" t="MCLIP|R" du="2000" t2="NO" class="title-slider">
+                                                                <a class="slides-p1">Rượu Sake </a>
+                                <p class="slides-p2"> truyền thống Nhật Bản</p>
+                            </div> -->
+                                <!-- <div u="caption" t="MCLIP|R" du="2000" t2="NO" class="content-slider">
+                                <a href="" title="Xem thêm">Xem thêm</a>
+                            </div> -->
+                            </div>
+                            <div u="loading"
+                                style="position: absolute; top: 0px; left: 0px; width: 1366px; height: 660px; z-index: 1000; display: none;"
+                                jssor-content="true">
+                                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                     background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;" jssor-content="true">
+                                </div>
+                                <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                     top: 0px; left: 0px;width: 100%;height:100%;" jssor-content="true">
+                                </div>
+                            </div>
+                        </div>
+                        <div debug-id="slide-1"
+                            style="width: 1366px; height: 660px; top: 0px; left: 0px; position: absolute; overflow: hidden; transform: perspective(2000px);">
+                            <a href="index.html" title="Rượu Sake - truyền thống Nhật Bản"
+                                style="width: 1366px; height: 660px; top: 0px; left: 0px; transform: perspective(2000px);"
+                                jssor-content="true">
+                                <img u="image" src="assets/images/21_1473927736_35557da5a3893113.jpg"
+                                    alt="Rượu Sake - truyền thống Nhật Bản" border="0" jssor-content="true"
+                                    style="width: 1535.88px; height: 660px; top: 0px; left: -84.9387px; transform: perspective(2000px); position: absolute;">
+                            </a>
+                            <div u="caption" t="NO" t3="RTT|2" r3="137.5%" du3="0000" d3="000"
+                                style="position: absolute; width: 445px; height: 380px; top: 0px; left: 10%; margin: 0px auto; transform: rotate(0deg) scale(1);"
+                                jssor-content="true">
+                                <!-- <div u="caption" t="MCLIP|R" du="2000" t2="NO" class="title-slider">
+                                                                <a class="slides-p1">Rượu Sake </a>
+                                <p class="slides-p2"> truyền thống Nhật Bản</p>
+                            </div> -->
+                                <!-- <div u="caption" t="MCLIP|R" du="2000" t2="NO" class="content-slider">
+                                <a href="" title="Xem thêm">Xem thêm</a>
+                            </div> -->
+                            </div>
+                            <div u="loading"
+                                style="position: absolute; top: 0px; left: 0px; width: 1366px; height: 660px; z-index: 1000; display: none;">
+                                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                     background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                                </div>
+                                <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                     top: 0px; left: 0px;width: 100%;height:100%;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div u="navigator" class="jssorb01"
+                        style="bottom: 20px; right: 0px; left: 667px; margin: 0px auto; width: 32px; height: 12px;">
+
+                        <div u="prototype" class="" style="position: absolute; left: 0px; top: 0px;"></div>
+                        <div u="prototype" style="position: absolute; left: 20px; top: 0px;" class="av"></div>
+                    </div><span u="arrowleft" class="jssora05l" style="top: 290px; left: 8px;">
+                    </span><span u="arrowright" class="jssora05r" style="top: 290px; right: 25px;">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="main" class="main clearfix">
+
+        <img src="/assets/images/no-image.png" width="0" height="0" style="width: 0; height: 0; display: none;" rel="nofollow"
+            alt="Thong ke" data-src="/thong-ke.jpg">
+        <div class="ashahi ashahi1">
+            <div class="container">
+                <div class="content-ashahi content-ashahi1 clearfix">
+                    <div class="title">
+                        <h2>Asahi Sushi</h2>
+                    </div>
+                    <div class="short-description">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididu</span>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ashahi ashahi2"
+            style="background: url(assets/images/445_1473669451_19357d6694be3fdf.jpg) no-repeat center;">
+            <div class="container">
+                <div class="content-ashahi content-ashahi2 clearfix">
+                    <div class="view">
+                        <a href="./gioi-thieu.html" title="Xem thêm về chúng tôi">Xem thêm về chúng tôi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ashahi ashahi3">
+            <div class="container">
+                <div class="content-ashahi content-ashahi3 clearfix">
+                    <div class="title">
+                        <h2>ASAHI SUSHI- NHỮNG HƯƠNG VỊ KỲ DIỆU</h2>
+                    </div>
+                    <div class="short-description">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ashahi ashahi4"
+            style="background: url(assets/images/234_1473669767_75157d66a87de385.jpg) no-repeat center;">
+            <div class="container">
+                <div class="content-ashahi content-ashahi4 clearfix">
+                    <div class="view">
+                        <a href="http://w3ni385.web3nhat.net/san-pham" title="Xem thực đơn của Asahi">Xem thực đơn của
+                            Asahi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ashahi ashahi5">
+            <div class="container">
+                <div class="content-ashahi content-ashahi5 clearfix">
+                    <div class="title">
+                        <h2>ASAHI SUSHI- KHÔNG GIAN ẨM THỰC NHẬT</h2>
+                    </div>
+                    <div class="short-description">
+                        <span>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDU
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ashahi ashahi51">
+            <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                <div class="owl-wrapper-outer">
+                    <div class="owl-wrapper"
+                        style="width: 12208px; left: 0px; display: block; transition: all 800ms ease 0s; transform: translate3d(-3052px, 0px, 0px);">
+                        <div class="owl-item" style="width: 1526px;">
+                            <div class="item">
+                                <div class="org-cm">
+                                    <img src="assets/images/867_1473670746_9957d66e5aec5df.jpg" alt="Nhà hàng asahi">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 1526px;">
+                            <div class="item">
+                                <div class="org-cm">
+                                    <img src="assets/images/448_1473670759_99557d66e67daa54.jpg" alt="Nhà hàng asahi 2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 1526px;">
+                            <div class="item">
+                                <div class="org-cm">
+                                    <img src="assets/images/766_1473670775_16657d66e7714247.jpg" alt="Nhà hàng asahi 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 1526px;">
+                            <div class="item">
+                                <div class="org-cm">
+                                    <img src="assets/images/2_1473670787_71857d66e8338755.jpg" alt="Nhà hàng asahi 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="owl-controls clickable">
+                    <div class="owl-pagination">
+                        <div class="owl-page"><span class=""></span></div>
+                        <div class="owl-page"><span class=""></span></div>
+                        <div class="owl-page active"><span class=""></span></div>
+                        <div class="owl-page"><span class=""></span></div>
+                    </div>
+                    <div class="owl-buttons">
+                        <div class="owl-prev">prev</div>
+                        <div class="owl-next">next</div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    var owl = $("#owl-demo");
+                    owl.owlCarousel({
+                        itemsCustom: [
+                            [0, 1],
+                            [450, 1],
+                            [600, 1],
+                            [900, 1],
+                            [1000, 1],
+                            [1200, 1]
+                        ],
+                        navigation: true,
+                        autoPlay: true,
+                    });
+                });
+            </script>
+        </div>
+        <div class="ashahi ashahi6">
+            <div class="container">
+                <div class="content-ashahi content-ashahi6 clearfix">
+                    <div class="title">
+                        <h2>LỜI CẢM ƠN TỪ ASAHI SUSHI</h2>
+                    </div>
+                    <div class="short-description">
+                        <span>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR
+                            INCIDIDU</span>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer clearfix">
+        <div class="container">
+            <div class="footer-top clearfix">
+                <div class="footer-top-left">
+                    <div class="ftl-content">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" title="#">
+                                    <img src="assets/images/app_store.jpg" alt="#" title="#">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="#">
+                                    <img src="assets/images/google_play.jpg" alt="#" title="#">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-top-right">
+                    <div class="ftr-content">
+                        <div class="ftr-content-top">
+                            <div class="ftr-address ftr-address1"><span class="text-bold">Asahi Sushi 1 :</span> <span
+                                    class="text-nomarl">Địa chỉ: 288 Bà Triệu - Hai Bà Trưng - Hà Nội/ Điện thoại:
+                                    (84)4. 39745945</span></div>
+
+                            <div class="ftr-address ftr-address1"><span class="text-bold">Asahi Sushi 2 :</span> <span
+                                    class="text-nomarl">Địa chỉ: 76 Triệu Việt Vương - Hai Bà Trưng - Hà Nội/ Điện
+                                    thoại: (84)4. 39447966</span></div>
+                        </div>
+                        <div class="ftr-content-bottom">
+                            <div class="ftr-copyright">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-top-scroll" id="footer-top-scroll" style="display: block; opacity: 0.0568982;">
+                    <a href="javascript:void(0)" title="Scroll Back to Top">
+                        <i class="icon icon-scroll"> </i>
+                    </a>
+                </div>
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function () {
+                        $(document).on('scroll', function () {
+                            if ($(this).scrollTop() > 0) {
+                                $('#footer-top-scroll').fadeIn('slow');
+                            } else {
+                                $('#footer-top-scroll').fadeOut();
+                            }
+                        });
+                        //
+                        $('#footer-top-scroll').click(function () {
+                            $("html, body").animate({
+                                scrollTop: 0
+                            }, 600);
+                            return false;
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </footer>
+    <div class="support-in">
+        <div class="panel panel-default categorybox">
+            <div class="panel-body">
+                <ul>
+                    <li> <a href="http://facebook.com/" target="_blank" rel="nofollow"><i class="icon-fb"></i></a></li>
+                    <li class="hotline">
+                        <span></span>
+                        <span style="color:red">0968 266 266</span>
+                    </li>
+                </ul>
+            </div>
+            <!--end-panel-body-->
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="assets/js/web3nhat.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+
+</html>
