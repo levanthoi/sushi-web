@@ -630,7 +630,7 @@
      bottom: 0;
      width: 1366px;
      height: 70px;
-     background: url(./bg_slider2.png) no-repeat;
+     background: url(../images/bg_slider2.png) no-repeat;
      z-index: 0;
      left: 0px;
      right: 0px;
@@ -682,6 +682,14 @@
      color: #fff;
      background: #543411;
  }
+
+ #slider1_container>div {
+    transform: none !important;
+}
+
+#slider1_container a img {
+    left: 0px !important;
+}
  
  .list-menu.open {
      left: -90px;
@@ -897,7 +905,7 @@
      top: 0px;
      width: 1366px;
      height: 651px;
-     background: url(./bg_ashahi41_before.png) no-repeat;
+     background: url(../images/bg_ashahi41_before.png) no-repeat;
      z-index: 9;
      margin: auto;
      left: 0px;
@@ -1539,7 +1547,7 @@
  
  .bg-bip {
      height: 2px;
-     background: url(./line_menu1.png) repeat-x;
+     background: url(../images/line_menu1.png) repeat-x;
      content: "";
      display: block;
      position: absolute;
@@ -1652,6 +1660,23 @@
      border: 1px solid #543411 !important;
      background: transparent;
  }
+
+ .loading-shoppingcart {
+    position: fixed;
+    top: 50%;
+    border-radius: 3px;
+    background-color: #f1ad1e;
+    color: #ffffff;
+    left: 50%;
+    z-index: 99;
+    height: 40px;
+    line-height: 40px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid #f1ad1e;
+    font-size: 20px;
+    display: none;
+}
  
  .reduction, .increase {
      width: 34px;
@@ -2560,6 +2585,13 @@
      border-left: 13px solid #f0e4d8;
      z-index: 9;
  }
+
+ .list-promotion .wrap-social span.publicdate {
+    float: left;
+    padding-top: 6px;
+    margin-right: 25px;
+    color: #989898;
+}
  
  .icon-news {
      background: url(./icon_promotion.png) no-repeat;

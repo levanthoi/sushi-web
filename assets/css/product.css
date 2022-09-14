@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext,vietnamese');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=latin-ext,vietnamese');
 
+
 /*shopping cart*/
 .cart .page-title {
     margin: 0 0 5px;
@@ -31,8 +32,8 @@
 #shopping-cart-table{border:none;float:left;width:100%;background-color:#FFFFFF;text-align:left;}
 .cart-table .btn-continue{float:left;}
 button.button span{font-weight:400;text-transform:uppercase;}
-button.button.btn-cart:before{content:"\f07a";font-family:'FontAwesome'; margin-right: 5px;}
-button.button.btn-more:before{content:"\f061";font-family:'FontAwesome';}
+button.button.btn-cart:before{content:"\f07a";font-family:FontAwesome; margin-right: 5px;}
+button.button.btn-more:before{content:"\f061";font-family:FontAwesome;}
 button.button.btn-continue:before{content:"\f061";font-family:FontAwesome;font-size:12px;padding-right:8px;}
 .data-table td {
     line-height: 20px;
@@ -57,13 +58,45 @@ button.button#empty_cart_button:before{content:"\f00d";font-family:FontAwesome;f
     padding: 8px 5px 8px 12px;
     width: 140px;
 }
-#shopping-cart-table .edit-bnt{float:left;}
-.edit-bnt:before{content:"\f040";font-family:FontAwesome;font-size:12px;}
-.edit-bnt span{display:none;}
-#shopping-cart-table a.remove-item{float: initial !important; display: inline-block; font-size: 20px;background-color:#fff;background-image:none;color:#999;cursor:pointer;padding:0px;-moz-border-radius:0px;border-radius:0px;cursor:pointer;text-decoration:none;float:left;transition:all 0.3s linear;-moz-transition:all 0.3s linear;-webkit-transition:all 0.3s linear;border:none;}
-#shopping-cart-table a.remove-item:before{content:"\f00d";font-family:FontAwesome;font-size:20px;}
-#shopping-cart-table a.remove-item span{display:none;}
-.totals h3{border-bottom:1px solid #ddd;color:#000;font-family:'Open Sans', sans-serif;font-size:15px;margin-bottom:5px;padding:10px 0;text-transform:uppercase;letter-spacing:1px;}
+#shopping-cart-table .edit-bnt{
+    float:left;
+}
+.edit-bnt:before{
+    content:"\f040";
+    font-family:FontAwesome;
+    ont-size:12px;
+}
+.edit-bnt span{
+    display:none;
+}
+#shopping-cart-table a.remove-item{
+    float: initial !important; 
+    display: inline-block; font-size: 20px;
+    background-color:#fff;
+    background-image:none;
+    color:#999;
+    cursor:pointer;
+    padding:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    cursor:pointer;text-decoration:none;
+    float:left;
+    transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;-webkit-transition:all 0.3s linear;
+    border:none;
+}
+#shopping-cart-table a.remove-item:before{
+    content:"\f00d";
+    font-family:FontAwesome;
+    font-size:20px;}
+#shopping-cart-table a.remove-item span{
+    display:none;
+}
+.totals h3{
+    border-bottom:1px solid #ddd;
+    color:#000;
+    font-family:'Open Sans', sans-serif;
+    font-size:15px;margin-bottom:5px;padding:10px 0;text-transform:uppercase;letter-spacing:1px;}
 .cart-collaterals .col2-set .col-2{width:320px;}
 .totals .inner{padding:4px 0px 15px 0px;background-color:#fff;margin-top:0px;}
 .cart-collaterals h3{font-size:15px;color:#000;margin-bottom:15px;border-bottom:1px #ddd solid;padding:10px 0;font-family:'Open Sans', sans-serif;text-transform:uppercase;letter-spacing:1px;margin-top:20px;}
@@ -196,6 +229,7 @@ button.button.btn-proceed-checkout span{
     color: #333;
     position: relative;
     white-space: nowrap;
+    z-index: 10000;
 }
 .process-payment ul li.active a:after {
     content: "";
@@ -599,7 +633,7 @@ button.button.btn-proceed-checkout span{
 }
 .cart .bg-cart-page .bg-scroll .cart-tbody .item-cart a.remove-item:before {
     content: "\f014";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     font-size: 14px;
 }
 .cart .bg-cart-page .bg-scroll .cart-tbody .item-cart a.remove-item span {
@@ -664,7 +698,7 @@ button.button.btn-proceed-checkout span{
 }
 .cart .bg-cart-page .cart-collaterals .totals .inner .checkout .btn-continue:before {
     content: "\f060";
-    font-family: FontAwesome;
+    font-family: "FontAwesome";
     font-size: 12px;
     padding-right: 8px;
 }
@@ -963,14 +997,26 @@ button.button.btn-proceed-checkout span{
     float: left;
     width: 100%;
 }
+
+/* #ytbilltoship:focus #steps-hoso{
+    opacity: 0;
+} */
+
 .steps-hoso{
     float: left;
     width: 100%;
     background: #fff;
     padding: 15px;
     padding-bottom: 0px;
+    /* opacity: 0;
+    visibility: hidden; */
     display: none;
 }
+/* #steps-hoso:target{
+    visibility: visible;
+    opacity: 1;
+    /* display: block !important; */
+} */
 .bg-step {
     float: left;
     width: 100%;
@@ -1108,6 +1154,8 @@ button.button.btn-proceed-checkout span{
     float: left;
     width: 100%;
 }
+
+
 .btn-add-field{
     padding: 7px 15px;
     background: #fff;
@@ -1360,6 +1408,20 @@ ul.bankList li {
     margin: 0px;
     padding: 0px;
 }
+/* hoa don */
+.statistic-order {
+    float: right;
+}
+
+.statistic-order strong {
+    width: 130px;
+    display: inline-block;
+}
+
+.statistic-order span.price {
+    color: #ff5c01;
+}
+
 i.VISA, i.MASTE, i.AMREX, i.JCB, i.VCB, i.TCB, i.MB, i.VIB, i.ICB, i.EXB, i.ACB, i.HDB, i.MSB, i.NVB, i.DAB, i.SHB, i.OJB, i.SEA, i.TPB, i.PGB, i.BIDV, i.AGB, i.SCB, i.VPB, i.VAB, i.GPB, i.SGB,i.NAB,i.BAB,i.visacard,i.mastercard 
 { width:80px; height:30px; display:block; background:url(https://www.nganluong.vn/webskins/skins/nganluong/checkout/version3/images/bank_logo.png) no-repeat;}
 i.MASTE { background-position:0px -31px}
@@ -1636,4 +1698,37 @@ ul.cardList li {
     width: 100%;
     padding: 10px 35px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+
+    .sc-account-box,
+    .full-inmobile {
+        width: 100%;
+    }
+
+    .sc-checkout .sc-userinfo {
+        display: block;
+    }
+
+    .sc-checkout .sc-account-box {
+        border-bottom: 1px solid #ebebeb;
+        padding: 0px 0px 15px 0px;
+    }
+
+    .btn-group-sm>.btn,
+    .btn-sm {
+        margin-bottom: 10px;
+    }
+
+    .sc-checkout .sc-title {
+        font-size: 17px;
+        margin-top: 25px;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #5cb85c;
+        border-color: #5cb85c;
+    }
 }

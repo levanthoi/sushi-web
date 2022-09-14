@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="vi" class="mdl-js">
-<script src="assets/jssdk.js" async="" crossorigin="anonymous"></script>
-<script id="facebook-jssdk" src="assets/js/sdk1.js"></script>
-<script async="" src="assets/js/analytics.js"></script>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,25 +15,21 @@
     <meta name="twitter:image" content="http://w3ni385.nanoweb.com.vn/mediacenter/media/images/363/logo/logo.png">
     <meta property="og:image:type" name="og:image:type" content="image/png">
     <link rel="canonical" href="/khuyen-mai.html">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <meta name="robots" content="noindex,nofollow">
     <meta name="googlebot" content="noindex,nofollow">
-    <script>
-
-
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Asahi Sushi</title>
     <!-- STYLE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="assets/css/css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <!-- <link href="assets/css/css" rel="stylesheet" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/owl.carousel.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
     <link rel="stylesheet" href="assets/css/style-menu.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- SCRIPT -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script src="/assets/js/owl.carousel.min.js"></script>
-    <script src="/assets/js/jssor.js"></script>
-    <script src="/assets/js/jssor.slider.js"></script>
+    <!-- <script src="/assets/js/jssor.js"></script> -->
+    <!-- <script src="/assets/js/jssor.slider.js"></script> -->
     <script src="/assets/js/script.js"></script>
 
 
@@ -74,7 +67,7 @@
                 </div>
                 <div class="header-center-cont1 logo">
                     <div class="box-img box-img-logo">
-                        <a href="index.html" title="Asahi">
+                        <a href="/index.html" title="Asahi">
                             <img title="#" src="./assets/images/logo.png" alt="Asahi">
                         </a>
                     </div>
@@ -104,38 +97,7 @@
                         </ul>
                     </div>
                 </div>
-                <script type="text/javascript">
-                    jQuery(document).ready(function () {
-                        jQuery('.language .language-action').on('click', function () {
-                            var thi = jQuery(this);
-                            if (!thi.hasClass('active') && !thi.parent().hasClass('active')) {
-                                var url = (thi.attr('href')) ? thi.attr('href') : thi.attr('src');
-                                if (!url)
-                                    return false;
-                                jQuery.ajax({
-                                    type: 'post',
-                                    dataType: 'JSON',
-                                    url: url,
-                                    beforeSend: function () {
-                                    },
-                                    success: function (res) {
-                                        thi.addClass('active');
-                                        if (res.code == 200) {
-                                            if (res.redirect)
-                                                window.location.href = res.redirect;
-                                            else
-                                                window.location.href = window.location.href;
-                                        }
-                                    },
-                                    error: function () {
-                                    }
-
-                                });
-                            }
-                            return false;
-                        });
-                    });
-                </script>
+               
                 <div class="header-center-cont4 shoppingcart" style="height: 110px;">
                     <div class="shoppingcart-content">
                         <a class="btn-show-cart" href="/gio-hang.html">
@@ -160,27 +122,6 @@
                                 <a class="check-out" href="/gio-hang.html">Giỏ hàng</a>
                             </div>
                         </div>
-                        <script>
-                            $(function () {
-                                $('.btn-show-cart').hover(function () {
-                                    $('.box-cart').fadeIn('slow');
-                                }, function () {
-
-                                });
-                                $(".shoppingcart").hover(function () {
-                                    //                    $('.box-cart').fadeIn('slow');
-                                }, function () {
-                                    $('.box-cart').fadeOut('slow');
-                                });
-                                $(".shoppingcart-content").click(function () {
-                                    if ($(".box-cart").is(":visible")) {
-                                        $('.box-cart').fadeOut('slow');
-                                    } else {
-                                        $('.box-cart').fadeIn('slow');
-                                    }
-                                });
-                            });
-                        </script>
                     </div>
                 </div>
                 <div class="flower flower-right">
@@ -196,7 +137,7 @@
                         <div id="menu-button"></div>
                         <ul>
                             <li class=" active">
-                                <a href="index.html" title="Trang chủ - 杉屋について">
+                                <a href="/index.html" title="Trang chủ - 杉屋について">
                                     Trang chủ <br><span class="menu-language-japan"> 杉屋について</span> </a>
                             </li>
                             <li class=" ">
@@ -280,7 +221,7 @@
         <div class="banner-page-content">
             <div class="box-img-banner-page">
                 <a href="/san-pham.html" target="_blank">
-                    <img width="100%" src="assets/images/581_1473674452_20357d67cd402b57.jpg"
+                    <img width="100%" src="/assets/images/581_1473674452_20357d67cd402b57.jpg"
                         alt="Cùng Asahi khám phá - ẩm thực Nhật">
                 </a>
             </div>
@@ -296,8 +237,6 @@
         </div>
     </div>
     <main id="main" class="main clearfix">
-        <img src="/thong-ke.jpg" width="0" height="0" style="width: 0; height: 0; display: none;" rel="nofollow"
-            alt="Thong ke" />
         <main id="main" class="main clearfix">
             <div class="page-about-us">
                 <div class="container">
@@ -555,12 +494,12 @@
                         <ul>
                             <li>
                                 <a href="javascript:void(0)" title="#">
-                                    <img src="assets/images/app_store.jpg" alt="#" title="app store">
+                                    <img src="/assets/images/app_store.jpg" alt="#" title="app store">
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" title="#">
-                                    <img src="assets/images/google_play.jpg" alt="#" title="google play">
+                                    <img src="/assets/images/google_play.jpg" alt="#" title="google play">
                                 </a>
                             </li>
                         </ul>
@@ -589,30 +528,12 @@
                         <i class="icon icon-scroll"> </i>
                     </a>
                 </div>
-
-                <script type="text/javascript">
-                    jQuery(document).ready(function () {
-                        $(document).on('scroll', function () {
-                            if ($(this).scrollTop() > 0) {
-                                $('#footer-top-scroll').fadeIn('slow');
-                            } else {
-                                $('#footer-top-scroll').fadeOut();
-                            }
-                        });
-                        //
-                        $('#footer-top-scroll').click(function () {
-                            $("html, body").animate({
-                                scrollTop: 0
-                            }, 600);
-                            return false;
-                        });
-                    });
-                </script>
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="/js/web3nhat.min.js?v=1.1.4.2"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/web3nhat.min.js?v=1.1.4.2"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
+    <script src="/assets/js/index.js" type="module"></script>
 </body>
 
 </html>

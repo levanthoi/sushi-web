@@ -10,24 +10,25 @@
     <meta property="og:url" content="http://w3ni385.nanoweb.com.vn/">
     <meta property="og:image" content="http://w3ni385.nanoweb.com.vn/mediacenter/media/images/363/logo/logo.png">
     <meta name="twitter:image" content="http://w3ni385.nanoweb.com.vn/mediacenter/media/images/363/logo/logo.png">
-    <meta property="og:image:type" name="og:image:type" content="image/png">
-    
-    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <meta property="og:image:type" name="og:image:type" content="image/png"> 
     <meta name="robots" content="noindex,nofollow">
     <meta name="googlebot" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <title>Asahi</title>
     <!-- STYLE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css">
     <link href="/assets/css/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css">
     <link rel="stylesheet" href="/assets/css/owl.carousel.css">
     <link rel="stylesheet" href="/assets/css/style-menu.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <!-- SCRIPT -->
     
-    <script src="/assets/js/jssor.slider.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <!-- <script src="/assets/js/jssor.slider.js"></script> -->
     <script src="/assets/js/script.js"></script>
+
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                 </div>
                 <div class="header-center-cont1 logo">
                     <div class="box-img box-img-logo">
-                        <a href="index.html" title="Asahi">
+                        <a href="/index.html" title="Asahi">
                             <img title="#" src="/assets/images/logo.png" alt="Asahi">
                         </a>
                     </div>
@@ -93,38 +94,7 @@
                         </ul>
                     </div>
                 </div>
-                <script type="text/javascript">
-                    jQuery(document).ready(function () {
-                        jQuery('.language .language-action').on('click', function () {
-                            var thi = jQuery(this);
-                            if (!thi.hasClass('active') && !thi.parent().hasClass('active')) {
-                                var url = (thi.attr('href')) ? thi.attr('href') : thi.attr('src');
-                                if (!url)
-                                    return false;
-                                jQuery.ajax({
-                                    type: 'post',
-                                    dataType: 'JSON',
-                                    url: url,
-                                    beforeSend: function () {
-                                    },
-                                    success: function (res) {
-                                        thi.addClass('active');
-                                        if (res.code == 200) {
-                                            if (res.redirect)
-                                                window.location.href = res.redirect;
-                                            else
-                                                window.location.href = window.location.href;
-                                        }
-                                    },
-                                    error: function () {
-                                    }
-
-                                });
-                            }
-                            return false;
-                        });
-                    });
-                </script>
+                
                 <div class="header-center-cont4 shoppingcart" style="height: 110px;">
                     <div class="shoppingcart-content">
                         <a class="btn-show-cart" href="/gio-hang.html">
@@ -149,27 +119,7 @@
                                 <a class="check-out" href="/gio-hang.html">Giỏ hàng</a>
                             </div>
                         </div>
-                        <script>
-                            $(function () {
-                                $('.btn-show-cart').hover(function () {
-                                    $('.box-cart').fadeIn('slow');
-                                }, function () {
-
-                                });
-                                $(".shoppingcart").hover(function () {
-                                    //                    $('.box-cart').fadeIn('slow');
-                                }, function () {
-                                    $('.box-cart').fadeOut('slow');
-                                });
-                                $(".shoppingcart-content").click(function () {
-                                    if ($(".box-cart").is(":visible")) {
-                                        $('.box-cart').fadeOut('slow');
-                                    } else {
-                                        $('.box-cart').fadeIn('slow');
-                                    }
-                                });
-                            });
-                        </script>
+                        
                     </div>
                 </div>
                 <div class="flower flower-right">
@@ -266,15 +216,6 @@
             </div>
         </div>
     </header>
-    <style type="text/css">
-        #slider1_container>div {
-            transform: none !important;
-        }
-
-        #slider1_container a img {
-            left: 0px !important;
-        }
-    </style>
     <div id="slider">
         <div id="slider1_container" style="position: relative; width: 1366px; margin: auto;
              height: 660px; overflow: hidden;" jssor-slider="true">
@@ -347,13 +288,6 @@
                             <div u="caption" t="NO" t3="RTT|2" r3="137.5%" du3="0000" d3="000"
                                 style="position: absolute; width: 445px; height: 380px; top: 0px; left: 10%; margin: 0px auto; transform: rotate(0deg) scale(1);"
                                 jssor-content="true">
-                                <!-- <div u="caption" t="MCLIP|R" du="2000" t2="NO" class="title-slider">
-                                                                <a class="slides-p1">Rượu Sake </a>
-                                <p class="slides-p2"> truyền thống Nhật Bản</p>
-                            </div> -->
-                                <!-- <div u="caption" t="MCLIP|R" du="2000" t2="NO" class="content-slider">
-                                <a href="" title="Xem thêm">Xem thêm</a>
-                            </div> -->
                             </div>
                             <div u="loading"
                                 style="position: absolute; top: 0px; left: 0px; width: 1366px; height: 660px; z-index: 1000; display: none;">
@@ -380,9 +314,6 @@
         </div>
     </div>
     <main id="main" class="main clearfix">
-
-        <img src="/assets/images/no-image.png" width="0" height="0" style="width: 0; height: 0; display: none;" rel="nofollow"
-            alt="Thong ke" data-src="/thong-ke.jpg">
         <div class="ashahi ashahi1">
             <div class="container">
                 <div class="content-ashahi content-ashahi1 clearfix">
@@ -409,11 +340,11 @@
             </div>
         </div>
         <div class="ashahi ashahi2"
-            style="background: url(assets/images/445_1473669451_19357d6694be3fdf.jpg) no-repeat center;">
+            style="background: url(/assets/images/445_1473669451_19357d6694be3fdf.jpg) no-repeat center;">
             <div class="container">
                 <div class="content-ashahi content-ashahi2 clearfix">
                     <div class="view">
-                        <a href="./gioi-thieu.html" title="Xem thêm về chúng tôi">Xem thêm về chúng tôi</a>
+                        <a href="/gioi-thieu.html" title="Xem thêm về chúng tôi">Xem thêm về chúng tôi</a>
                     </div>
                 </div>
             </div>
@@ -436,7 +367,7 @@
             <div class="container">
                 <div class="content-ashahi content-ashahi4 clearfix">
                     <div class="view">
-                        <a href="http://w3ni385.web3nhat.net/san-pham" title="Xem thực đơn của Asahi">Xem thực đơn của
+                        <a href="/san-pham.html" title="Xem thực đơn của Asahi">Xem thực đơn của
                             Asahi</a>
                     </div>
                 </div>
@@ -463,28 +394,28 @@
                         <div class="owl-item" style="width: 1526px;">
                             <div class="item">
                                 <div class="org-cm">
-                                    <img src="assets/images/867_1473670746_9957d66e5aec5df.jpg" alt="Nhà hàng asahi">
+                                    <img src="/assets/images/867_1473670746_9957d66e5aec5df.jpg" alt="Nhà hàng asahi">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item" style="width: 1526px;">
                             <div class="item">
                                 <div class="org-cm">
-                                    <img src="assets/images/448_1473670759_99557d66e67daa54.jpg" alt="Nhà hàng asahi 2">
+                                    <img src="/assets/images/448_1473670759_99557d66e67daa54.jpg" alt="Nhà hàng asahi 2">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item" style="width: 1526px;">
                             <div class="item">
                                 <div class="org-cm">
-                                    <img src="assets/images/766_1473670775_16657d66e7714247.jpg" alt="Nhà hàng asahi 3">
+                                    <img src="/assets/images/766_1473670775_16657d66e7714247.jpg" alt="Nhà hàng asahi 3">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item" style="width: 1526px;">
                             <div class="item">
                                 <div class="org-cm">
-                                    <img src="assets/images/2_1473670787_71857d66e8338755.jpg" alt="Nhà hàng asahi 4">
+                                    <img src="/assets/images/2_1473670787_71857d66e8338755.jpg" alt="Nhà hàng asahi 4">
                                 </div>
                             </div>
                         </div>
@@ -506,23 +437,6 @@
                     </div>
                 </div>
             </div>
-            <script>
-                $(document).ready(function () {
-                    var owl = $("#owl-demo");
-                    owl.owlCarousel({
-                        itemsCustom: [
-                            [0, 1],
-                            [450, 1],
-                            [600, 1],
-                            [900, 1],
-                            [1000, 1],
-                            [1200, 1]
-                        ],
-                        navigation: true,
-                        autoPlay: true,
-                    });
-                });
-            </script>
         </div>
         <div class="ashahi ashahi6">
             <div class="container">
@@ -588,25 +502,6 @@
                         <i class="icon icon-scroll"> </i>
                     </a>
                 </div>
-
-                <script type="text/javascript">
-                    jQuery(document).ready(function () {
-                        $(document).on('scroll', function () {
-                            if ($(this).scrollTop() > 0) {
-                                $('#footer-top-scroll').fadeIn('slow');
-                            } else {
-                                $('#footer-top-scroll').fadeOut();
-                            }
-                        });
-                        //
-                        $('#footer-top-scroll').click(function () {
-                            $("html, body").animate({
-                                scrollTop: 0
-                            }, 600);
-                            return false;
-                        });
-                    });
-                </script>
             </div>
         </div>
     </footer>
@@ -626,8 +521,9 @@
     </div>
 
 
-    <script type="text/javascript" src="assets/js/web3nhat.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/web3nhat.min.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
+    <script src="/assets/js/index.js" type="module"></script>
 
 </body>
 

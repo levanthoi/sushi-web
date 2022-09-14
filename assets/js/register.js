@@ -1,4 +1,3 @@
-
 jQuery(document).on('change', '#Users_province_id', function () {
     jQuery.ajax({
         url: '/suggest/suggest/getdistrict',

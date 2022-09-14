@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="vi" class="mdl-js">
-<script src="assets/jssdk.js" async="" crossorigin="anonymous"></script>
-<script id="facebook-jssdk" src="assets/js/sdk1.js"></script>
-<script async="" src="assets/js/analytics.js"></script>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -22,21 +19,17 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <meta name="robots" content="noindex,nofollow">
     <meta name="googlebot" content="noindex,nofollow">
-    <script>
-
-
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Asahi Sushi</title>
     <!-- STYLE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="assets/css/css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <!-- <link href="assets/css/css" rel="stylesheet" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/owl.carousel.css"> -->
     <link rel="stylesheet" href="assets/css/style-menu.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- SCRIPT -->
     <script src="/assets/js/owl.carousel.min.js"></script>
-    <script src="/assets/js/jssor.js"></script>
-    <script src="/assets/js/jssor.slider.js"></script>
+    <!-- <script src="/assets/js/jssor.js"></script> -->
+    <!-- <script src="/assets/js/jssor.slider.js"></script> -->
     <script src="/assets/js/script.js"></script>
 
 
@@ -63,35 +56,6 @@
                     </div>
                 </div>
                 <div class="header-top-right">
-                    <!-- <div class="like-face">
-                        <div class="whtml">
-                            <div id="fb-root" class=" fb_reset">&nbsp;<div
-                                    style="position: absolute; top: -10000px; width: 0px; height: 0px;">
-                                    <div></div>
-                                </div>
-                            </div>
-                            <script>(function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s); js.id = id;
-                                    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }(document, 'script', 'facebook-jssdk'));</script>
-                            <div class="fb-like fb_iframe_widget" data-href="http://w3ni385.nanoweb.com.vn/"
-                                data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"
-                                fb-xfbml-state="rendered"
-                                fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=3&amp;href=http%3A%2F%2Fw3ni385.nanoweb.com.vn%2F&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=false&amp;show_faces=false">
-                                <span style="vertical-align: bottom; width: 90px; height: 28px;"><iframe
-                                        name="f2f1d76fff92e3" width="1000px" height="1000px"
-                                        data-testid="fb:like Facebook Social Plugin"
-                                        title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true"
-                                        allowfullscreen="true" scrolling="no" allow="encrypted-media"
-                                        src="./Asahi_files/like.html"
-                                        style="border: none; visibility: visible; width: 90px; height: 28px;"
-                                        class=""></iframe></span>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -132,38 +96,7 @@
                         </ul>
                     </div>
                 </div>
-                <script type="text/javascript">
-                    jQuery(document).ready(function () {
-                        jQuery('.language .language-action').on('click', function () {
-                            var thi = jQuery(this);
-                            if (!thi.hasClass('active') && !thi.parent().hasClass('active')) {
-                                var url = (thi.attr('href')) ? thi.attr('href') : thi.attr('src');
-                                if (!url)
-                                    return false;
-                                jQuery.ajax({
-                                    type: 'post',
-                                    dataType: 'JSON',
-                                    url: url,
-                                    beforeSend: function () {
-                                    },
-                                    success: function (res) {
-                                        thi.addClass('active');
-                                        if (res.code == 200) {
-                                            if (res.redirect)
-                                                window.location.href = res.redirect;
-                                            else
-                                                window.location.href = window.location.href;
-                                        }
-                                    },
-                                    error: function () {
-                                    }
-
-                                });
-                            }
-                            return false;
-                        });
-                    });
-                </script>
+                
                 <div class="header-center-cont4 shoppingcart" style="height: 110px;">
                     <div class="shoppingcart-content">
                         <a class="btn-show-cart" href="/gio-hang.html">
@@ -188,27 +121,6 @@
                                 <a class="check-out" href="/gio-hang.html">Giỏ hàng</a>
                             </div>
                         </div>
-                        <script>
-                            $(function () {
-                                $('.btn-show-cart').hover(function () {
-                                    $('.box-cart').fadeIn('slow');
-                                }, function () {
-
-                                });
-                                $(".shoppingcart").hover(function () {
-                                    //                    $('.box-cart').fadeIn('slow');
-                                }, function () {
-                                    $('.box-cart').fadeOut('slow');
-                                });
-                                $(".shoppingcart-content").click(function () {
-                                    if ($(".box-cart").is(":visible")) {
-                                        $('.box-cart').fadeOut('slow');
-                                    } else {
-                                        $('.box-cart').fadeIn('slow');
-                                    }
-                                });
-                            });
-                        </script>
                     </div>
                 </div>
                 <div class="flower flower-right">
@@ -334,7 +246,7 @@
                         <div class="controls col-sm-9">
                             <input class="span9 form-control" name="LoginForm[username]" id="LoginForm_username"
                                 type="text">
-                            <div class="errorMessage" id="LoginForm_username_em_" style="display:none"></div>
+                            <div class="errorMessage" id="LoginForm_username_em_" style="display:none">Tên đăng nhập không hợp lệ</div>
                         </div>
                     </div>
                     <div class="regis control-group form-group">
@@ -343,7 +255,7 @@
                         <div class="controls col-sm-9">
                             <input class="span9 form-control" name="LoginForm[password]" id="LoginForm_password"
                                 type="password">
-                            <div class="errorMessage" id="LoginForm_password_em_" style="display:none"></div>
+                            <div class="errorMessage" id="LoginForm_password_em_" style="display:none">Mật khẩu không hợp lệ.</div>
                         </div>
                     </div>
                     <div class="form-group" style="padding-top: 10px;">
@@ -353,8 +265,7 @@
                         </div>
                     </div>
                 </form>
-            </div><img src="assets/images/no-image.png" width="0" height="0" style="width: 0; height: 0; display: none;"
-                rel="nofollow" alt="Thong ke" data-src="/thong-ke.jpg">
+            </div>
         </div>
     </main>
     <footer id="footer" class="footer clearfix">
@@ -399,30 +310,12 @@
                         <i class="icon icon-scroll"> </i>
                     </a>
                 </div>
-
-                <script type="text/javascript">
-                    jQuery(document).ready(function () {
-                        $(document).on('scroll', function () {
-                            if ($(this).scrollTop() > 0) {
-                                $('#footer-top-scroll').fadeIn('slow');
-                            } else {
-                                $('#footer-top-scroll').fadeOut();
-                            }
-                        });
-                        //
-                        $('#footer-top-scroll').click(function () {
-                            $("html, body").animate({
-                                scrollTop: 0
-                            }, 600);
-                            return false;
-                        });
-                    });
-                </script>
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="/js/web3nhat.min.js?v=1.1.4.2"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/web3nhat.min.js?v=1.1.4.2"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/main.js"></script> -->
+    <script src="/assets/js/index.js" type="module"></script>
 </body>
 
 </html>
