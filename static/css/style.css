@@ -3235,7 +3235,7 @@
     }
  }
 
- @media screen and (max-width: 500px){
+ @media screen and (max-width: 505px){
     .jssora05l,.jssora05r {
         display: none;
     }
@@ -3339,5 +3339,32 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .content-ashahi .view a {
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+    .header-bottom{
+        /* display: none; */
+    
+    }
+    .banner-page {
+        margin-top: -6px;
+        margin-bottom: 45px;
+        position: relative;
+        top: -86px;
+    }
+    #slider {
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: -23px;
+        position: relative;
+        top: -46px;
+    }
+    #slider:after {
+        height: 58px;
+    }
     
  }
+
+ /* ============ */
+ 
